@@ -25,6 +25,14 @@
       <groupId>org.neo4j</groupId>
       <artifactId>neo4j-lucene-index</artifactId>
     </dependency>
+    <dependency>
+      <groupId>org.neo4j</groupId>
+      <artifactId>neo4j-batch-insert</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.neo4j</groupId>
+      <artifactId>neo4j-collections</artifactId>
+    </dependency>
   </dependencies>
 
   <build>
@@ -33,7 +41,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-shade-plugin</artifactId>
-        <version>3.1.0</version>
+        <version>3.2.4</version>
         <configuration>
           <filters>
             <!-- Fix for "SecurityException: Invalid signature file digest for Manifest main attributes" -->
